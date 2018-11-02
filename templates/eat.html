@@ -1,0 +1,30 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1> This is a {{state}} disaster predictor! </h1>
+		<form action = '/louisiana' method = 'POST'> 
+			Enter hurricane info! <br />
+			<!-- <select name = 'animal'> 
+				<option val = 'cat'> cat </option>
+				<option val = 'dog'> dog </option>
+				<option val = 'rabbit'> rabbit </option>
+			</select>  -->
+			Average national temperature this month? <input name='temp'> <br />
+			Average national precipitation this month? <input name = 'pr'> <br />
+			Current wind speed? <input name='magnitude'> <br />
+			Latitude? <input name ='latitude'> <br />
+			Longitude? <input name='longitude'> <br />
+			<input type = 'submit' value = 'Predict'> 
+		</form>
+	{% if prob %}
+	The hurricane is likely to cause huge damage!
+	{% endif %}	
+	{% if prob == 0 %}
+	The hurricane is not likely to cause much damage.
+	{% endif %}	
+	</body>
+</html>
+
+
+

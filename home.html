@@ -1,0 +1,28 @@
+<head>
+</head>
+
+<body bgcolor="#99ffcc">
+  <h1>What Is Your iPhone Worth?</h1>
+  <h2> By Danny Mendoza  </h2>
+    <div id = 'linkdiv'>
+        <a href="https://github.com/jdmendoza/used_iphone_price_prediction">Github Link</a>
+    </div>
+<br>
+  <p>
+       <b>Purpose</b>: Use data science + ML to valuate an iPhone.
+    <br>
+  </p>
+<br>
+  <form  method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+      {{ form.phone_model.label}}<br>{{form.phone_model}}
+      <br>
+        {{form.condition.label}}<br>{{form.condition}}
+      <br>
+        {{form.size.label}}<br>{{form.size}}
+      <br>
+      <br>
+        {{ form.submit() }}
+  </form>
+</body>
