@@ -1,7 +1,19 @@
 ## Project McNulty
-###### Week 4 - Week 6.5
 
 ![](mcnulty.jpg)
+
+#### Objective
+
+Forecasting the degree of hurricane damage is important to determine the appropriate response in order to mitigate damage and the loss of lives. A model used for screening weather systems would be impactful as support for making early decisions when weather systems first appear in the ocean.
+
+#### Results
+
+* Created a random forest classification model capable of predicting the severity of hurricane damage based on data from NOAA to predict damage based on location, wind speed and other simple features (F2 Score = 0.48)
+* Created flask app for easy access to the model. This tool can be used as a very quick initial screening tool to assess the approximate severity of the damage. The prediction is calculated instantaneously and can be used by the general public and weather observatories alike.
+
+[Project McNulty Final Slides](mcnulty_hurricane.pdf)
+
+##### Project prompt is as follows:
 
 #### Back story:
 
